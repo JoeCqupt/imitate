@@ -8,9 +8,8 @@
     <artifactId>imitate</artifactId>
     <version>0.1-SNAPSHOT</version>
     <modules>
-        <module>network</module>
-        <module>raft</module>
         <module>core</module>
+        <module>client</module>
     </modules>
     <packaging>pom</packaging>
 
