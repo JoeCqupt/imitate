@@ -37,6 +37,7 @@ jobs:
         gpg_passphrase: ${{ secrets.GPG_PASSWD }}
         nexus_username: ${{ secrets.OSSRH_USER }}
         nexus_password: ${{ secrets.OSSRH_PASSWD }}
+        directory: client
       env:
         MAVEN_USERNAME: ${{ secrets.OSSRH_USER }}
         MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWD }}
