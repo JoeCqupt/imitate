@@ -10,7 +10,6 @@
     <version>0.1.1</version>
 
 
-
     <name>imitate-client</name>
     <description>java client for imitate MQ.</description>
     <url>https://github.com/JoeCqupt/imitate</url>
