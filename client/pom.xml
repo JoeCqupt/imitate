@@ -2,18 +2,17 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>imitate</artifactId>
-        <groupId>io.github.joecqupt.imitate</groupId>
-        <version>0.1-SNAPSHOT</version>
-    </parent>
+
+    <groupId>io.github.joecqupt.imitate</groupId>
+    <artifactId>imitate-client</artifactId>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
+    <version>0.1.1</version>
 
-    <artifactId>imitate-client</artifactId>
+
 
     <name>imitate-client</name>
-    <description>java client for imitate.</description>
+    <description>java client for imitate MQ.</description>
     <url>https://github.com/JoeCqupt/imitate</url>
 
     <licenses>
@@ -65,17 +64,6 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-source-plugin</artifactId>
                 <version>3.2.0</version>
                 <executions>
@@ -122,6 +110,7 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                    <!--这个配置会在版本号不带SNAPSHOT的时候，指定release你的jar包到maven官方仓库-->
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
